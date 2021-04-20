@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T "
+            android:textAlignment="center"
+            android:textColor="#DD2C00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:textAlignment="center"
+            android:textColor="#0F359F"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/mobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textAlignment="center"
+
+            android:textColor="#6413D5"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/blankid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sc"
+            android:textAlignment="center"
+            android:textColor="#FF6D00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/driverid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"
+            android:textColor="#CC1010"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="40dp"
+        android:id="@+id/recyclerViewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
